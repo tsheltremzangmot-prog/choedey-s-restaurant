@@ -3,45 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Choedey's Restaurant | Home</title>
+<title>Choedey's Restaurant</title>
+
 <style>
-body { font-family:'Segoe UI', sans-serif; margin:0; padding:0; background:#fffbe6; color:#333; }
-header { background:#b71c1c; color:white; padding:40px 0; text-align:center; font-family:'Georgia', serif; }
-header h1 { font-size:3em; letter-spacing:2px; text-shadow:2px 2px #fff; }
-nav ul { list-style:none; display:flex; justify-content:center; padding:0; margin:0; background:#8e0b0b; }
-nav ul li { margin:0 20px; }
-nav ul li a { color:white; font-weight:bold; text-decoration:none; padding:12px 15px; display:block; transition:0.3s; }
-nav ul li a:hover { background:#b71c1c; border-radius:5px; }
-section { padding:80px 20px; max-width:900px; margin:auto; text-align:center; }
-h2 { color:#b71c1c; font-size:2.2em; margin-bottom:25px; }
-p { font-size:1.2em; line-height:1.6; }
-button { background:#b71c1c; color:white; border:none; padding:15px 30px; font-size:1.1em; border-radius:8px; cursor:pointer; margin:10px; transition:0.3s; }
-button:hover { background:#8e0b0b; transform:scale(1.05); }
-footer { background:#8e0b0b; color:white; text-align:center; padding:25px; margin-top:30px; }
+body{
+  margin:0;
+  font-family:"Segoe UI",sans-serif;
+  background:#f9f7f2;
+  color:#333;
+}
+
+header{
+  background:linear-gradient(135deg,#1b5e4b,#2f7d64);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+header h1{
+  font-size:3em;
+  margin:0;
+  letter-spacing:2px;
+}
+
+nav{
+  background:#13483a;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  margin:0;
+  padding:0;
+}
+
+nav li{
+  margin:0 15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  padding:15px;
+  display:block;
+}
+
+nav a:hover{
+  background:#2f7d64;
+  border-radius:5px;
+}
+
+section{
+  max-width:900px;
+  margin:auto;
+  padding:60px 20px;
+  text-align:center;
+}
+
+section h2{
+  color:#1b5e4b;
+  font-size:2.2em;
+}
+
+.btn{
+  background:#2f7d64;
+  color:white;
+  border:none;
+  padding:15px 30px;
+  font-size:1.1em;
+  border-radius:30px;
+  cursor:pointer;
+  margin:15px;
+}
+
+.btn:hover{
+  background:#1b5e4b;
+}
+
+footer{
+  background:#13483a;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>Choedey's Restaurant</h1>
+<p>Authentic Bhutanese Cuisine | Thimphu</p>
+</header>
+
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="menu.html">Menu</a></li>
-<li><a href="contact.html">Contact & Reservation</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-</header>
 
 <section>
-<h2>Welcome to Choedey's Restaurant</h2>
-<p>Experience authentic Bhutanese cuisine in the heart of Thimphu! Perfect for birthdays, holidays, or a casual meal with friends and family.</p>
-<button onclick="window.location.href='menu.html'">View Menu</button>
-<button onclick="window.location.href='contact.html'">Contact / Reservation</button>
+<h2>Welcome</h2>
+
+<p>
+Enjoy delicious Bhutanese food with family and friends.
+Perfect for birthdays, holidays, and special gatherings.
+</p>
+
+<button class="btn" onclick="location.href='menu.html'">View Menu</button>
+<button class="btn" onclick="location.href='contact.html'">Contact Us</button>
 </section>
 
 <footer>
-<p>&copy; 2026 Choedey's Restaurant, Thimphu</p>
+<p>© 2026 Choedey's Restaurant</p>
 </footer>
 
 </body>

@@ -3,84 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Choedey's Restaurant | Menu</title>
+<title>Menu | Choedey's Restaurant</title>
+
 <style>
-body { font-family:'Segoe UI', sans-serif; margin:0; padding:0; background:#fff8e1; color:#333; }
-header { background:#b71c1c; color:white; padding:30px 0; text-align:center; font-family:'Georgia', serif; }
-header h1 { font-size:2.8em; text-shadow:1px 1px #fff; }
-nav ul { list-style:none; display:flex; justify-content:center; padding:0; margin:0; background:#8e0b0b; }
-nav ul li { margin:0 15px; }
-nav ul li a { color:white; font-weight:bold; text-decoration:none; padding:10px 12px; display:block; transition:0.3s; }
-nav ul li a:hover { background:#b71c1c; border-radius:5px; }
+body{
+  margin:0;
+  font-family:"Segoe UI",sans-serif;
+  background:#f9f7f2;
+  color:#333;
+}
 
-section { padding:60px 20px; max-width:900px; margin:auto; }
-h2 { color:#b71c1c; text-align:center; font-size:2em; margin-bottom:25px; text-shadow:1px 1px #fff; }
-h3 { margin-top:35px; color:#b71c1c; border-bottom:2px solid #b71c1c; padding-bottom:5px; text-shadow:1px 1px #fff; }
+header{
+  background:#1b5e4b;
+  color:white;
+  text-align:center;
+  padding:40px;
+}
 
-.menu-list { display:grid; grid-template-columns:1fr 100px; gap:8px; padding:0; margin:0; }
-.menu-list li { list-style:none; padding:12px 15px; font-size:1.2em; border-bottom:1px dashed #b71c1c; display:flex; justify-content:space-between; transition:0.2s; background:#fff3e0; border-radius:6px; }
-.menu-list li:hover { background:#ffe0b2; transform:scale(1.02); box-shadow:0 2px 5px rgba(0,0,0,0.2); }
+nav{
+  background:#13483a;
+}
 
-footer { background:#8e0b0b; color:white; text-align:center; padding:25px; margin-top:30px; }
+nav ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  margin:0;
+  padding:0;
+}
 
-@media(max-width:600px){
-nav ul{flex-direction:column;} nav ul li{margin:10px 0;} .menu-list { grid-template-columns:1fr 80px; }
+nav li{
+  margin:0 15px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  padding:15px;
+  display:block;
+}
+
+nav a:hover{
+  background:#2f7d64;
+}
+
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+h2{
+  text-align:center;
+  color:#1b5e4b;
+  font-size:2.3em;
+  margin-bottom:40px;
+}
+
+.menu-box{
+  background:white;
+  border-radius:15px;
+  padding:30px;
+  margin-bottom:40px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu-box h3{
+  color:#2f7d64;
+  border-bottom:2px solid #eee;
+  padding-bottom:10px;
+}
+
+.item{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px dashed #ddd;
+  font-size:1.1em;
+}
+
+.item:last-child{
+  border:none;
+}
+
+.price{
+  color:#b8860b;
+  font-weight:bold;
+}
+
+footer{
+  background:#13483a;
+  color:white;
+  text-align:center;
+  padding:20px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Choedey's Restaurant Menu</h1>
+<h1>Our Menu</h1>
+</header>
+
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="menu.html">Menu</a></li>
-<li><a href="contact.html">Contact & Reservation</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-</header>
 
 <section>
-<h2>Drinks</h2>
-<ul class="menu-list">
-<li>Milk Tea <span>Nu 50</span></li>
-<li>Milk Coffee <span>Nu 60</span></li>
-<li>Lassi <span>Nu 80</span></li>
-<li>Ice Coke <span>Nu 50</span></li>
-<li>Suja <span>Nu 50</span></li>
-<li>Lemon Tea <span>Nu 50</span></li>
-<li>Beer <span>Nu 120</span></li>
-<li>Soju <span>Nu 150</span></li>
-</ul>
 
-<h3>Vegetarian Dishes</h3>
-<ul class="menu-list">
-<li>Rice <span>Nu 50</span></li>
-<li>Egg Datsi Fry <span>Nu 80</span></li>
-<li>Red Ema Datsi <span>Nu 90</span></li>
-<li>Mushroom Datsi <span>Nu 100</span></li>
-<li>Egg Omelette <span>Nu 60</span></li>
-<li>Green Ema Datsi <span>Nu 90</span></li>
-</ul>
+<h2>Food & Drinks</h2>
 
-<h3>Non-Vegetarian Dishes</h3>
-<ul class="menu-list">
-<li>Rice <span>Nu 50</span></li>
-<li>Shakam Pa <span>Nu 200</span></li>
-<li>Sikam Pa <span>Nu 200</span></li>
-<li>Goep Pa <span>Nu 250</span></li>
-<li>Chicken Pa <span>Nu 250</span></li>
-<li>Pork Ribs <span>Nu 300</span></li>
-<li>Sikam Datsi <span>Nu 200</span></li>
-<li>Dry Fish Pa <span>Nu 250</span></li>
-<li>Fried Liver <span>Nu 200</span></li>
-</ul>
+<div class="menu-box">
+<h3>🥤 Drinks</h3>
+
+<div class="item"><span>Milk Tea</span><span class="price">Nu 50</span></div>
+<div class="item"><span>Milk Coffee</span><span class="price">Nu 60</span></div>
+<div class="item"><span>Lassi</span><span class="price">Nu 80</span></div>
+<div class="item"><span>Ice Coke</span><span class="price">Nu 50</span></div>
+<div class="item"><span>Suja</span><span class="price">Nu 50</span></div>
+<div class="item"><span>Lemon Tea</span><span class="price">Nu 50</span></div>
+<div class="item"><span>Beer</span><span class="price">Nu 120</span></div>
+<div class="item"><span>Soju</span><span class="price">Nu 150</span></div>
+</div>
+
+
+<div class="menu-box">
+<h3>🥬 Vegetarian</h3>
+
+<div class="item"><span>Rice</span><span class="price">Nu 50</span></div>
+<div class="item"><span>Egg Datsi Fry</span><span class="price">Nu 80</span></div>
+<div class="item"><span>Red Ema Datsi</span><span class="price">Nu 90</span></div>
+<div class="item"><span>Mushroom Datsi</span><span class="price">Nu 100</span></div>
+<div class="item"><span>Egg Omelette</span><span class="price">Nu 60</span></div>
+<div class="item"><span>Green Ema Datsi</span><span class="price">Nu 90</span></div>
+</div>
+
+
+<div class="menu-box">
+<h3>🍖 Non-Vegetarian</h3>
+
+<div class="item"><span>Shakam Pa</span><span class="price">Nu 200</span></div>
+<div class="item"><span>Sikam Pa</span><span class="price">Nu 200</span></div>
+<div class="item"><span>Goep Pa</span><span class="price">Nu 250</span></div>
+<div class="item"><span>Chicken Pa</span><span class="price">Nu 250</span></div>
+<div class="item"><span>Pork Ribs</span><span class="price">Nu 300</span></div>
+<div class="item"><span>Sikam Datsi</span><span class="price">Nu 200</span></div>
+<div class="item"><span>Dry Fish Pa</span><span class="price">Nu 250</span></div>
+<div class="item"><span>Fried Liver</span><span class="price">Nu 200</span></div>
+</div>
 
 </section>
 
 <footer>
-<p>&copy; 2026 Choedey's Restaurant, Thimphu</p>
+<p>© 2026 Choedey's Restaurant</p>
 </footer>
 
 </body>
