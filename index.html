@@ -9,25 +9,32 @@
 body{
   margin:0;
   font-family:"Segoe UI",sans-serif;
-  background:#f9f7f2;
+  background:#faf7f2;
   color:#333;
 }
 
+/* Header */
 header{
-  background:linear-gradient(135deg,#1b5e4b,#2f7d64);
+  background:linear-gradient(135deg,#0d1b2a,#1b263b);
   color:white;
   text-align:center;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
 header h1{
   font-size:3em;
-  margin:0;
   letter-spacing:2px;
+  margin:0;
 }
 
+header p{
+  color:#f4d35e;
+  font-size:1.2em;
+}
+
+/* Navigation */
 nav{
-  background:#13483a;
+  background:#0d1b2a;
 }
 
 nav ul{
@@ -39,7 +46,7 @@ nav ul{
 }
 
 nav li{
-  margin:0 15px;
+  margin:0 20px;
 }
 
 nav a{
@@ -51,42 +58,51 @@ nav a{
 }
 
 nav a:hover{
-  background:#2f7d64;
-  border-radius:5px;
+  color:#f4d35e;
+  border-bottom:3px solid #f4d35e;
 }
 
+/* Main Section */
 section{
   max-width:900px;
   margin:auto;
-  padding:60px 20px;
+  padding:70px 20px;
   text-align:center;
 }
 
 section h2{
-  color:#1b5e4b;
-  font-size:2.2em;
+  color:#0d1b2a;
+  font-size:2.4em;
 }
 
+section p{
+  font-size:1.2em;
+  line-height:1.7;
+}
+
+/* Buttons */
 .btn{
-  background:#2f7d64;
-  color:white;
+  background:#f4d35e;
+  color:#0d1b2a;
   border:none;
-  padding:15px 30px;
+  padding:15px 35px;
   font-size:1.1em;
   border-radius:30px;
   cursor:pointer;
   margin:15px;
+  font-weight:bold;
 }
 
 .btn:hover{
-  background:#1b5e4b;
+  background:#ffd60a;
 }
 
+/* Footer */
 footer{
-  background:#13483a;
+  background:#0d1b2a;
   color:white;
   text-align:center;
-  padding:20px;
+  padding:25px;
 }
 </style>
 </head>
@@ -95,7 +111,7 @@ footer{
 
 <header>
 <h1>Choedey's Restaurant</h1>
-<p>Authentic Bhutanese Cuisine | Thimphu</p>
+<p>Authentic Bhutanese Cuisine • Thimphu</p>
 </header>
 
 <nav>
@@ -110,8 +126,8 @@ footer{
 <h2>Welcome</h2>
 
 <p>
-Enjoy delicious Bhutanese food with family and friends.
-Perfect for birthdays, holidays, and special gatherings.
+Experience delicious Bhutanese food in a warm and comfortable environment.
+Perfect for family dinners, birthdays, and special occasions.
 </p>
 
 <button class="btn" onclick="location.href='menu.html'">View Menu</button>

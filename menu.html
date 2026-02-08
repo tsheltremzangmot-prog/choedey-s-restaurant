@@ -9,19 +9,19 @@
 body{
   margin:0;
   font-family:"Segoe UI",sans-serif;
-  background:#f9f7f2;
+  background:#faf7f2;
   color:#333;
 }
 
 header{
-  background:#1b5e4b;
+  background:#0d1b2a;
   color:white;
   text-align:center;
-  padding:40px;
+  padding:50px;
 }
 
 nav{
-  background:#13483a;
+  background:#1b263b;
 }
 
 nav ul{
@@ -33,7 +33,7 @@ nav ul{
 }
 
 nav li{
-  margin:0 15px;
+  margin:0 20px;
 }
 
 nav a{
@@ -45,32 +45,33 @@ nav a{
 }
 
 nav a:hover{
-  background:#2f7d64;
+  color:#f4d35e;
 }
 
+/* Menu Section */
 section{
   max-width:1000px;
   margin:auto;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
 h2{
   text-align:center;
-  color:#1b5e4b;
-  font-size:2.3em;
+  color:#0d1b2a;
+  font-size:2.5em;
   margin-bottom:40px;
 }
 
-.menu-box{
+.menu-card{
   background:white;
-  border-radius:15px;
+  border-radius:18px;
   padding:30px;
   margin-bottom:40px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
 }
 
-.menu-box h3{
-  color:#2f7d64;
+.menu-card h3{
+  color:#1b263b;
   border-bottom:2px solid #eee;
   padding-bottom:10px;
 }
@@ -78,8 +79,8 @@ h2{
 .item{
   display:flex;
   justify-content:space-between;
-  padding:10px 0;
-  border-bottom:1px dashed #ddd;
+  padding:12px 0;
+  border-bottom:1px dashed #ccc;
   font-size:1.1em;
 }
 
@@ -88,15 +89,15 @@ h2{
 }
 
 .price{
-  color:#b8860b;
+  color:#c9a227;
   font-weight:bold;
 }
 
 footer{
-  background:#13483a;
+  background:#0d1b2a;
   color:white;
   text-align:center;
-  padding:20px;
+  padding:25px;
 }
 </style>
 </head>
@@ -119,7 +120,7 @@ footer{
 
 <h2>Food & Drinks</h2>
 
-<div class="menu-box">
+<div class="menu-card">
 <h3>🥤 Drinks</h3>
 
 <div class="item"><span>Milk Tea</span><span class="price">Nu 50</span></div>
@@ -133,7 +134,7 @@ footer{
 </div>
 
 
-<div class="menu-box">
+<div class="menu-card">
 <h3>🥬 Vegetarian</h3>
 
 <div class="item"><span>Rice</span><span class="price">Nu 50</span></div>
@@ -145,7 +146,7 @@ footer{
 </div>
 
 
-<div class="menu-box">
+<div class="menu-card">
 <h3>🍖 Non-Vegetarian</h3>
 
 <div class="item"><span>Shakam Pa</span><span class="price">Nu 200</span></div>
